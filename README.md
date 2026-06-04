@@ -1,73 +1,75 @@
-# Overview
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# WhatDreamsCost-ComfyUI
 
-This will be a collection of free resources for ComfyUI.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/WhatDreamsCost-ComfyUI)
 
-Hopefully it will make creating cool stuff easier.
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-All of my nodes are created with the help of AI, so there may or may not be redundant, messy code.
+## Architecture
 
-## ▶️ YouTube Video 
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-[![Overview Video](https://img.youtube.com/vi/GGuK4DPiEVw/0.jpg)](https://www.youtube.com/watch?v=GGuK4DPiEVw)
+## Install
 
-## ❓ How to install nodes
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-- Navigate to your `/ComfyUI/custom_nodes/ folder`
-- Run `git clone https://github.com/WhatDreamscost/WhatDreamsCost-ComfyUI`
+```bash
+git clone https://github.com/Interested-Deving-1896/WhatDreamsCost-ComfyUI.git
+cd WhatDreamsCost-ComfyUI
+```
 
-## 🔄 Recent Updates
-I've updated the workflows to have less dependancies. I've removed the CacheDiT and IAMCCS vae decode nodes.
+## Usage
 
-# ⚙️ Custom Nodes
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-## Multi Image Loader
-![Multi_Image_Loader_GIF](https://github.com/user-attachments/assets/71924103-92a6-4c1e-b67a-064dcbcce781)
+## Configuration
 
-An Image loader that features a built in gallery, allowing your to easily rearrange images and output them seperately or batched together. It also combines the image resize node and LTXVPreprocess node to reduce clutter in LTX workflows.
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-## LTX Sequencer
-![LTX_Sequencer_GIF](https://github.com/user-attachments/assets/88f27155-f50e-4cb2-b937-ab173e6bdf0b)
+## CI
 
-An overhaul of the LTXVAddGuideMulti node. It allows you to quickly create FFLF (First Frame Last Frame) videos, shot sequences, supports any number of middle frames.
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-Connect the Multi Image Loader node's multi_output to automatically update the node's widgets.
+## Mirror chain
 
-It also has a sync feature that syncs all LTX Sequencer nodes together in realtime, removing the need to edit every single node manually every time you want to make a change to something. 
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/WhatDreamsCost-ComfyUI`](https://github.com/Interested-Deving-1896/WhatDreamsCost-ComfyUI) and mirrored through:
 
+```
+Interested-Deving-1896/WhatDreamsCost-ComfyUI  ──►  OpenOS-Project-OSP/WhatDreamsCost-ComfyUI  ──►  OpenOS-Project-Ecosystem-OOC/WhatDreamsCost-ComfyUI
+```
 
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-## LTX Keyframer
-<img width="612" height="563" alt="LTX_Keyframer_Node" src="https://github.com/user-attachments/assets/c4583a8b-4d48-4179-8d64-748ddd07b314" />
+## Contributors
 
-An overhaul of the LTXVImgToVideoInplaceKJ node. It allows you to quickly create FFLF (First Frame Last Frame) videos and shot sequences. Also upports any number of middle frames.
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-Connect the Multi Image Loader node's multi_output to automatically update the node's widgets.
+## Origins
 
-It also has a sync feature that syncs all LTX Keyframer nodes together in realtime, removing the need to edit every single node manually every time you want to make a change to something. 
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-**I would recommend using the LTX Sequencer Node over this node, after further testing it seems superior in at pretty much everything. I'll leave it in just in case more people want to test it**
+## Resources
 
-## 💡 Workflows
-<img width="3130" height="930" alt="LTX I2V First Last Frame 3 Stage Workflow v3" src="https://github.com/user-attachments/assets/de18a10b-6edf-4857-8eb1-cac1a6683923" />
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-This is a compact LTX 2.3 workflow for I2V and First Frame, Middle Frame, Last frame video generation.
-I seperated and organized everything into subraphs to make things as clean as possible, and added toggles to customize the workflow quickly.
+## License
 
-Download workflows here: https://github.com/WhatDreamsCost/WhatDreamsCost-ComfyUI/tree/main/workflows
-
-Or drag and drop image into ComfyUI to import workflow.
-
-## ❗ Known Issues
-**Multi Image Loader**
-- Rearranging images sometimes gets finicky. I'll try and fix this soon. It may be due to my ComfyUI frontend not matching the backend.
-
-**LTX Sequencer and LTX Keyframer**
-- Will randomly swap the widget values when loading workflows. It happens very rarely, and for some reason only happens to 1 node. It can be reversed by just re-syncing it with another node.
-
-It may also be due to my ComfyUI frontend not matching the backend (that has been causing other issues with ComfyUI, still waiting for ComfyUI to fix the issues with latest version)
-
-## 💡 Additional Info
-
-I made these nodes knowing almost nothing about python and a beginner level knowledge of javascript. Feel free to suggest improvements, and if you run into any bugs let me know.
-
-For those asking, I mainly used gemini to create these nodes.
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/WhatDreamsCost-ComfyUI/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
